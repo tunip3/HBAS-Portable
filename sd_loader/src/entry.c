@@ -73,7 +73,7 @@ static int LoadFileToMem(private_data_t *private_data, unsigned char **fileOut, 
 	void *curl_handle = private_data->curl_easy_init();
 	if(!curl_handle) private_data->OSFatal("cURL not initialized");
 	
-	private_data->curl_easy_setopt(curl_handle, 10002, "http://www.wiiubru.com/appstore/apps/appstore/hbas.elf");
+	private_data->curl_easy_setopt(curl_handle, 10002, "https://github.com/tunip3/HBAS-Portable/releases/download/1/mocha.elf");
 	private_data->curl_easy_setopt(curl_handle, 20011, curl_write_data_callback);
 	private_data->curl_easy_setopt(curl_handle, 10001, private_data);
 
