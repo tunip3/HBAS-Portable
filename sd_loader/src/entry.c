@@ -73,7 +73,7 @@ static int LoadFileToMem(private_data_t *private_data, unsigned char **fileOut, 
 	void *curl_handle = private_data->curl_easy_init();
 	if(!curl_handle) private_data->OSFatal("cURL not initialized");
 	
-	private_data->curl_easy_setopt(curl_handle, 10002, "https://tunip3.github.io/mocha.elf");
+	private_data->curl_easy_setopt(curl_handle, 10002, "http://tunip3.github.io/mocha.elf");
 	private_data->curl_easy_setopt(curl_handle, 20011, curl_write_data_callback);
 	private_data->curl_easy_setopt(curl_handle, 10001, private_data);
 
