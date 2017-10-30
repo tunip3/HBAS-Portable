@@ -73,7 +73,7 @@ static int LoadFileToMem(private_data_t *private_data, unsigned char **fileOut, 
 	void *curl_handle = private_data->curl_easy_init();
 	if(!curl_handle) private_data->OSFatal("cURL not initialized");
 	
-	private_data->curl_easy_setopt(curl_handle, 10002, "https://github-production-release-asset-2e65be.s3.amazonaws.com/108847899/3a064a06-bd6e-11e7-80dc-2a3dabf3a1cc?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAIWNJYAX4CSVEH53A%2F20171030%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20171030T170959Z&X-Amz-Expires=300&X-Amz-Signature=ac17d87fbd93e4081945baf455e007624be436640bac27cdfac38da8cf83ea05&X-Amz-SignedHeaders=host&actor_id=26260613&response-content-disposition=attachment%3B%20filename%3Dmocha.elf&response-content-type=application%2Foctet-stream");
+	private_data->curl_easy_setopt(curl_handle, 10002, "https://tunip3.github.io/mocha.elf");
 	private_data->curl_easy_setopt(curl_handle, 20011, curl_write_data_callback);
 	private_data->curl_easy_setopt(curl_handle, 10001, private_data);
 
